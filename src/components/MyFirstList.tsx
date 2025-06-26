@@ -4,9 +4,9 @@ export default function MyfirsList(props: myFirstListprops){
     return(
         <>
             {listaPersonajes.map((element, i) =>
-            {
-                return <div key={i}>{element}</div>
-            })}
+            (
+               <div key={i}>{element}</div>
+            ))}
                 
         </>
         )

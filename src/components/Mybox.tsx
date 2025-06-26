@@ -19,7 +19,7 @@ export default function Mybox({title, body, btnText="Save"}: myboxprops){
      }
     return(
         <>
-        <div className="box1">
+        <div className="container">
                 <h1>{title}</h1>
                 <div>{body}</div>
 
@@ -27,10 +27,10 @@ export default function Mybox({title, body, btnText="Save"}: myboxprops){
             <MyInput personaje={personaje} onChange={handleChange}/>
           
         
-            <div>
-                <MyFirstButton  onClick={addHandle}     btnClass="btn-success" btnTitle={btnText}/>
-                <MyFirstButton  onClick={deleteHandle} btnClass="btn-danger" btnTitle="delete"/>
-            </div>
+
+            <MyFirstButton  onClick={addHandle}     btnClass="btn btn-success" btnTitle={btnText}/>
+            <MyFirstButton  onClick={deleteHandle}  btnClass="btn btn-danger" btnTitle="delete"/>
+          
         </div>
         </>
     )
