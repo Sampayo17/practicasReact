@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    <div className='bg-blue-700'>
     <BrowserRouter>
   
     <Menu/>
@@ -22,6 +23,7 @@ function App() {
       </Route>
     </Routes>
     </BrowserRouter>
+    </div>
     </>
     
   )
