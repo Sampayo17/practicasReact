@@ -17,21 +17,22 @@ export default function Mybox({title, body, btnText="Save"}: myboxprops){
         setPersonajes(event.target.value);
         console.log(personaje);
      }
+     
     return(
-        <>
-        <div className="container">
-                <h1>{title}</h1>
-                <div>{body}</div>
+            <>
+            <div className="container">
+                    <h1>{title}</h1>
+                    <div>{body}</div>
 
-            <MyfirsList listaPersonajes={personajesList}></MyfirsList> 
-            <MyInput personaje={personaje} onChange={handleChange}/>
-          
-        
+                <MyfirsList listaPersonajes={personajesList}></MyfirsList> 
+                <MyInput personaje={personaje} onChange={handleChange}/>
+            
+            
 
-            <MyFirstButton  onClick={addHandle}     btnClass="btn btn-success" btnTitle={btnText}/>
-            <MyFirstButton  onClick={deleteHandle}  btnClass="btn btn-danger" btnTitle="delete"/>
-          
-        </div>
+                <MyFirstButton  onClick={addHandle}     btnClass="btn btn-success" btnTitle={btnText}/>
+                <MyFirstButton  onClick={deleteHandle}  btnClass="btn btn-danger" btnTitle="delete"/>
+            
+            </div>
         </>
     )
 
