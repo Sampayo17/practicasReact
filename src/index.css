@@ -1,0 +1,29 @@
+
+
+.box1{
+  background-color: white;
+  color: #000000;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 50px;
+}
+
+.btn-success{
+  background-color: #05c72f;
+  color: #ffffff;
+}
+
+.btn-gray{
+  background-color: #5a5f5b;
+  color: #ffffff;
+}
+
+
+.btn-danger{
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.border-list{
+  border: solid #000000;
+}
