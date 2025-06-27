@@ -28,10 +28,10 @@ export default function Mybox({title, body, btnText="Save"}: myboxprops){
                 <MyInput personaje={personaje} onChange={handleChange}/>
             
             
-
-                <MyFirstButton  onClick={addHandle}     btnClass="btn btn-success" btnTitle={btnText}/>
-                <MyFirstButton  onClick={deleteHandle}  btnClass="btn btn-danger" btnTitle="delete"/>
-            
+               <div className="center flex justify-center items-center gap-2 ">
+                <MyFirstButton  onClick={addHandle}     btnClass={"bg-green-500 font-bold p-2 py-2  text-gray-100 border-0 rounded hover:scale-110 "} btnTitle={btnText}/>
+                <MyFirstButton  onClick={deleteHandle}  btnClass={"bg-red-500 font-bold p-2 py-2  text-gray-100 border-0 rounded hover:scale-110 "} btnTitle="Delete"/>
+             </div>
             </div>
         </>
     )
